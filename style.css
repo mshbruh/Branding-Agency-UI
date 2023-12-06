@@ -1,0 +1,56 @@
+.main {
+    width: 1920px;
+    height: 8387.094px;
+    flex-shrink: 0;
+}
+
+.home-intro {
+    display: flex;
+width: 770px;
+padding: 0px 55.503px 4px 55.703px;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+position: absolute;
+top: 60px;
+left: 575px;
+right: 575px;
+}
+
+.MATTERFUL-logo-intro {
+    display: flex;
+width: 459.943px;
+height: 91.234px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+}
+
+#MATTERFUL {
+    width: 459.943px;
+height: 91.264px;
+flex-shrink: 0;
+fill: #231F20;
+}
+
+#BRANDS {
+    width: 459.943px;
+height: 91.264px;
+flex-shrink: 0;
+fill: #231F20;
+}
+
+#home-text   {
+    display: flex;
+width: 658.794px;
+height: 52px;
+flex-direction: column;
+justify-content: center;
+color: #000;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
