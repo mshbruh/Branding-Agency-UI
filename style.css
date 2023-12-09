@@ -1,6 +1,3 @@
-/*
-*  html5resetcss
-*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
@@ -16,6 +13,47 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 
+@font-face {
+    font-family: 'Montserrat';
+    font-style:normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style:normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Montserrat-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    font-style:normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/PlayfairDisplay-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    font-style:normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/PlayfairDisplay-Bold.woff2') format('woff2');
+}
+:root {
+    --light-grey: #F4F4F4;
+    --white: #FFFFFF;
+    --black: #000000;
+    --matterful-black: #231F20;
+    --grey: #888888;
+    --main-font: 'Montserrat', sans-serif;
+    --sub-font: 'PlayfairDisplay', sans-serif;
+}
+
 .main {
     position:flex;
     width: 1920px;
@@ -30,53 +68,45 @@ input,select{vertical-align:middle}
 
 .home-intro {
     display: flex;
-width: 770px;
-padding: 0px 55.503px 4px 55.703px;
-flex-direction: column;
-align-items: center;
-gap: 14px;
-position: absolute;
-top: 60px;
-left: 575px;
-right: 575px;
+    width: 770px;
+    padding: 0px 55.503px 4px 55.703px;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    position: absolute;
+    top: 60px;
+    left: 575px;
+    right: 575px;
 }
 
 .MATTERFUL-logo-intro {
     display: flex;
-width: 459.943px;
-height: 91.234px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
-}
-
-#MATTERFUL {
     width: 459.943px;
-height: 91.264px;
-flex-shrink: 0;
-fill: #231F20;
+    height: 91.234px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-#BRANDS {
+.MATTERFUL {
     width: 459.943px;
-height: 91.264px;
-flex-shrink: 0;
-fill: #231F20;
+    height: 91.264px;
+    flex-shrink: 0;
+    fill: var(--matterful-black);
 }
 
-#home-text   {
+.home-text {
     display: flex;
-width: 658.794px;
-height: 52px;
-flex-direction: column;
-justify-content: center;
-color: #000;
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; /* 166.667% */
+    width: 658.794px;
+    height: 52px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--black);
+    font-weight: 400;
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px; /* 166.667% */
 }
 
 .home-featured {
@@ -85,7 +115,7 @@ line-height: 30px; /* 166.667% */
     flex-shrink: 0;
     position:absolute;
     top: 288.23px;
-    background-image: url(home-featured-img.jpg);
+    background-image: url(img/home-featured-img.jpg);
     background-position: 0px 0px;
     background-size: 100% auto; 
     background-repeat: no-repeat;
@@ -94,10 +124,10 @@ line-height: 30px; /* 166.667% */
 
 .home-featured-content {
     display:inline-block;
+    position:flex;
     width: 567px;
     height: 203px;
     flex-shrink: 0;
-    position:flex;
     margin-top: 163.5px;
     margin-left: 204px;
 }
@@ -106,59 +136,59 @@ line-height: 30px; /* 166.667% */
     left: 15px;
 }   
 
-#ftr1 {
+.ftr1 {
     display: flex;
-width: 200.481px;
-height: 19px;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;
-color: #888;
-font-family: 'Monserrat', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 150% */
-text-transform: uppercase;
+    flex-direction: column;
+    width: 200.481px;
+    height: 19px;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--grey);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    text-transform: uppercase;
 }
 
-#ftr2 {
+.ftr2 {
     display: flex;
-width: 138px;
-height: 48px;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;
-color: #000;
-font-family: 'Playfair Display', serif;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: 42px; /* 116.667% */
-bottom: 104px;
+    width: 138px;
+    height: 48px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--black);
+    font-family: var(--sub-font);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 116.667% */
+    bottom: 104px;
 }
 
-#ftr3 {
-    display: flexbox;
-width: 471.325px;
-height: 52px;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;   
-color: #000;
-font-family: 'Montserrat', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; /* 166.667% */
-top: 110px;
+.ftr3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 471.325px;
+    height: 52px;
+    flex-shrink: 0;   
+    color: var(--black);
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    top: 110px;
 }
 
 .home-featured-img {    
     position: absolute;
     width: 1000px;
     height: 500px;
-    flex-shrink: 0;
+    flex-shrink: 0; 
     top: 30px;
     right: 134px;
 }
